@@ -1,0 +1,27 @@
+.user-manager {
+    text-align: center;
+  }
+  
+  .user-manager .user-form {
+    margin-bottom: 20px;
+  }
+  
+  .user-manager ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-manager li button {
+    margin-left: 10px;
+  }  

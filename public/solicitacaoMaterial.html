@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Material</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { width: 80%; margin: auto; padding: 20px; border: 1px solid #000; }
+        .header, .footer { text-align: center; font-size: 12pt; font-weight: bold; padding: 10px; margin-bottom: 20px; }
+        .footer { margin-top: 30px; font-size: 10pt; border-top: 1px solid #000; }
+        .content h2 { text-align: center; font-size: 14pt; margin-top: 0; }
+        .content p { font-size: 12pt; margin: 10px 0; }
+        input[type="text"], textarea { font-size: 12pt; border: none; border-bottom: 1px solid #000; width: 100%; box-sizing: border-box; padding: 4px; }
+        textarea { resize: vertical; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+        .print-btn { display: block; margin: 20px auto; padding: 10px 20px; font-size: 12pt; cursor: pointer; }
+        @media print { .print-btn { display: none; } input[type="text"], textarea { border: none; } .container { width: 100%; margin: 0; border: none; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Empresa XYZ</p>
+            <p>Solicitação de Material</p>
+        </div>
+        <div class="content">
+            <h2>Formulário de Solicitação de Material</h2>
+            <p><strong>Data:</strong> <input type="text" placeholder="____/____/________"></p>
+            <p><strong>Solicitante:</strong> <input type="text" placeholder="Nome do solicitante"></p>
+            <p><strong>Departamento:</strong> <input type="text" placeholder="Nome do departamento"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" placeholder="Descrição do item"></td>
+                        <td><input type="text" placeholder="Quantidade"></td>
+                        <td><input type="text" placeholder="Unidade"></td>
+                        <td><input type="text" placeholder="Observações"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" placeholder="Descrição do item"></td>
+                        <td><input type="text" placeholder="Quantidade"></td>
+                        <td><input type="text" placeholder="Unidade"></td>
+                        <td><input type="text" placeholder="Observações"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Assinatura do Solicitante:</strong> <textarea rows="2" placeholder="_______________________________"></textarea></p>
+            <p><strong>Data:</strong> <input type="text" placeholder="____/____/________"></p>
+        </div>
+        <div class="footer">
+            <p>Empresa XYZ - Endereço da Empresa - Contato: (00) 1234-5678</p>
+            <p>&copy; 2024 Todos os direitos reservados</p>
+        </div>
+        <button class="print-btn" onclick="window.print()">Imprimir Documento</button>
+    </div>
+</body>
+</html>

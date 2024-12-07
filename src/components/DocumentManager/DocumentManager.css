@@ -1,0 +1,23 @@
+.document-manager {
+    text-align: center;
+  }
+  
+  .iframe-container {
+    margin-top: 20px;
+  }
+  
+  iframe {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: block;
+    width: 794px; /* Largura A4 */
+    height: 1123px; /* Altura A4 */
+  }
+  
+  @media (max-width: 800px) {
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+  }  

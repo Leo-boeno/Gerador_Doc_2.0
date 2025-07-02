@@ -1,0 +1,171 @@
+/* Arquivo Principal de Estilos - Tema Azul e Branco */
+/* Este arquivo importa todos os estilos do projeto */
+
+/* Tema e variáveis */
+@import './theme.css';
+
+/* Estilos base */
+@import './base.css';
+
+/* Componentes comuns */
+@import './components.css';
+
+/* Estilos específicos dos componentes */
+@import '../components/LoginManager/LoginManager.css';
+@import '../components/UserManager/UserManager.css';
+@import '../components/DocumentManager/DocumentManager.css';
+
+/* Estilos globais adicionais */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--off-white) 0%, var(--very-light-blue) 100%);
+  padding: 20px;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-heavy);
+  overflow: hidden;
+}
+
+/* Navegação */
+.nav-bar {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-medium);
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Utilitários adicionais */
+.text-blue {
+  color: var(--primary-blue);
+}
+
+.text-blue-light {
+  color: var(--secondary-blue);
+}
+
+.bg-blue {
+  background-color: var(--primary-blue);
+}
+
+.bg-blue-light {
+  background-color: var(--secondary-blue);
+}
+
+.bg-blue-very-light {
+  background-color: var(--very-light-blue);
+}
+
+.border-blue {
+  border-color: var(--secondary-blue);
+}
+
+/* Animações */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Estados de hover melhorados */
+.hover-lift {
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-heavy);
+}
+
+/* Responsividade global */
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 15px;
+  }
+  
+  .main-content {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .nav-bar {
+    padding: 1rem;
+  }
+  
+  .nav-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 5px;
+  }
+  
+  .nav-bar {
+    padding: 0.75rem;
+  }
+  
+  .nav-title {
+    font-size: 1.1rem;
+  }
+} 

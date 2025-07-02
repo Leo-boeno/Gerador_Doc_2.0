@@ -1,0 +1,33 @@
+/* Tema Azul e Branco - Variáveis CSS */
+:root {
+  /* Cores principais */
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --light-blue: #60a5fa;
+  --very-light-blue: #dbeafe;
+  
+  /* Cores neutras */
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --light-gray: #e2e8f0;
+  --gray: #64748b;
+  --dark-gray: #334155;
+  
+  /* Cores de estado */
+  --success-green: #10b981;
+  --error-red: #ef4444;
+  --warning-orange: #f59e0b;
+  
+  /* Sombras */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Bordas */
+  --border-radius: 8px;
+  --border-radius-large: 12px;
+  
+  /* Transições */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+} 
